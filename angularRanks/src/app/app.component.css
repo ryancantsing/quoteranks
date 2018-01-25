@@ -1,0 +1,83 @@
+* {
+    font-family: sans-serif;
+}
+#body {
+    max-height: 800px;
+    max-width: 600px;
+}
+#formBox {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    height: 250px;
+}
+#quotesList {
+    vertical-align: bottom;
+    display: inline-block;
+    width: 500px;
+    background-color: white;
+    height: 300px;
+    overflow: scroll;
+}
+.quoteBox {
+    display: inline-block;
+    vertical-align: bottom;
+    background-color: white;
+    width: 100%;
+    height: 55%;
+    border: 1px solid black;
+}
+#quote {
+    height: 35%;
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+}
+button {
+    width: 100%;
+    height: 30%;
+    padding: 10px;
+}
+#author {
+    height: 35%;
+    width: 100%;
+    display: inline-block;
+    background-color: white;
+}
+#buttons {
+    width: 20%;
+    height: 125px;
+    display: inline-block;
+    background-color: white;
+    text-align: right;
+    padding: 5px;
+    margin-left: 35px;
+}
+#likes {
+    display: inline-block;
+    width: 15%;
+    background-color: white;
+    height: 30%;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+#text {
+    height: 100%;
+    display: inline-block;
+    width: 50%;
+}
+#errorSheet {
+    display: inline-block;
+    height: 20px;
+    vertical-align: bottom; 
+}
+#dislike {
+    background-color: #EA9999;
+}
+#like {
+    background-color: #B6D7A8;
+}
+#delete {
+    background-color: #303030;
+    color : white;
+}

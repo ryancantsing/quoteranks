@@ -1,0 +1,31 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div id="body">
+<div id="formBox">
+  <form (submit)="addQuote()">
+    <h2>Add a Quote</h2>
+    <textarea name="quote.quote" [(ngModel)]="quote.quote" cols="30" rows="5"></textarea><br>
+    <label for="author">Author</label>
+    <input type="text" name="quote.author" [(ngModel)]="quote.author"><br>
+    <input type="submit" value="Add Quote">
+  </form>
+  <div id="errorSheet">
+  {{errors}}
+  </div>
+</div>
+<div id="quotesList">
+  <h2>Quotes List</h2>
+  <div *ngFor="let quote of quotes" class="quoteBox">
+    <div id="text">
+    <p id="quote">"{{ quote.quote }}"</p>
+    <p id="author">- {{ quote.author }}</p>
+    </div>
+    <h4 id="likes">{{ quote.likes }}</h4>
+    <div id="buttons">
+    <button id="like" (click)="like('like' , quote)">Vote Up</button>
+    <button id="dislike" (click)="like('dislike', quote)">Vote Down</button>
+    <button id="delete" (click)="deleteQuote(quote)">Delete</button>
+  </div>
+  </div>
+</div>
+</div>
+
